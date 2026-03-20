@@ -1,6 +1,6 @@
 # Universal-Developer
 
-A [LangGraph](https://github.com/langchain-ai/langgraph) workflow that loops between **coding**, **review**, **execution** (Python only), and **saving** output. It calls Anthropic Claude through `langchain-anthropic`.
+A [LangGraph](https://github.com/langchain-ai/langgraph) workflow that loops between **coding**, **review**, **execution** , and **saving** output. It calls Anthropic Claude through `langchain-anthropic`.
 
 ## Flow
 
