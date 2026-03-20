@@ -39,7 +39,7 @@ uv add langchain langgraph langchain-anthropic
 
 `uv init` creates `pyproject.toml`; `uv venv` creates `.venv`; `uv add` records those packages and installs them.
 
-### This repository (already has `pyproject.toml`)
+
 
 ```bash
 export ANTHROPIC_API_KEY="your_key_here"
@@ -51,7 +51,7 @@ uv sync
 ## Run
 
 ```bash
-uv run python main.py
+uv run main.py
 ```
 
 You will be prompted for:
