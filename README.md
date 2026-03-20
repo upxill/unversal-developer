@@ -1,4 +1,4 @@
-# Universal-Developer
+# universal-developer
 
 A [LangGraph](https://github.com/langchain-ai/langgraph) workflow that loops between **coding**, **review**, **execution** (Python only), and **saving** output. It calls Anthropic Claude through `langchain-anthropic`.
 
@@ -29,10 +29,24 @@ Default model: `claude-sonnet-4-5-20250929` (`nodes.py`).
 
 ## Setup
 
+### New project (from scratch)
+
+```bash
+uv init
+uv venv
+uv add langchain langgraph langchain-anthropic
+```
+
+`uv init` creates `pyproject.toml`; `uv venv` creates `.venv`; `uv add` records those packages and installs them.
+
+### This repository (already has `pyproject.toml`)
+
 ```bash
 export ANTHROPIC_API_KEY="your_key_here"
 uv sync
 ```
+
+`uv sync` creates or updates the virtualenv and installs locked dependencies from `pyproject.toml` / `uv.lock` (if present).
 
 ## Run
 
